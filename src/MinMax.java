@@ -47,7 +47,7 @@ public class MinMax {
 		//System.out.println("Smallest element in the array: " + min);
 		
 		//Random shuffling
-		for(int i=0 ; i<mylist.length ; i++){
+		/*for(int i=0 ; i<mylist.length ; i++){
 			int index = (int)(Math.random() * mylist.length);
 			
 			double temp = mylist[i];
@@ -59,6 +59,19 @@ public class MinMax {
 		System.out.println("\nSuffled array: ");
 		for(int i=0 ; i<mylist.length ; i++) {
 			System.out.print( Math.round(mylist[i]) + " ");
+		}*/
+		
+		//Shifting elements to left
+		double temp = mylist[0];
+		for(int i=1 ; i<mylist.length ; i++){
+			mylist[i-1] = mylist[i];
 		}
+		mylist[mylist.length-1] = temp;
+		
+		System.out.println("\nShifting elements: ");
+		for(int i=0 ; i<mylist.length ; i++) {
+			System.out.print( Math.round(mylist[i]) + " ");
+		}
+		
 	}
 }
