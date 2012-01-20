@@ -72,6 +72,10 @@ public class MinMax {
 		for(int i=0 ; i<mylist.length ; i++) {
 			System.out.print( Math.round(mylist[i]) + " ");
 		}
+		System.out.println("\nBasic foreach in Java!");
+		for(double u: mylist) {
+			System.out.print(u + " ");
+		}
 		
 	}
 }
